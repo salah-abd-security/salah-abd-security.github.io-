@@ -1,4 +1,12 @@
- body {
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  border-top: 1px solid #30363d;
+  color: #8b949e;
+}
+
+body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background-color: #0d1117;
@@ -77,6 +85,16 @@ nav button {
 nav button:hover {
   background: #58a6ff;
   color: #0d1117;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #f0f6fc;
+}
+
+h2 {
+  margin-top: 40px;
+  color: #58a6ff;
 }
 
 
