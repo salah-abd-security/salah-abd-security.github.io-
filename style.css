@@ -1,4 +1,6 @@
-
+ /* =========================
+   GLOBAL
+========================= */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -6,22 +8,19 @@ body {
   color: #c9d1d9;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 60px;
-  border-top: 1px solid #30363d;
-  color: #8b949e;
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
- .container {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 20px;
+a:hover {
+  opacity: 0.8;
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 2.5rem;
+  color: #f0f6fc;
 }
 
 h2 {
@@ -29,36 +28,10 @@ h2 {
   color: #58a6ff;
 }
 
-a {
-  color: #58a6ff;
-  text-decoration: none;
-  font-weight: bold;
-}
+/* =========================
+   NAVIGATION
+========================= */
 nav {
-  background: #161b22;
-  padding: 15px;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 15px;
-  color: #58a6ff;
-  font-weight: bold;
-}
-.card {
-  background: #161b22;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
-  border-left: 4px solid #58a6ff;
-}
-
-.card h3 {
-  margin-bottom: 5px;
-}
-
-
- nav {
   background: #161b22;
   padding: 15px 20px;
   display: flex;
@@ -67,11 +40,11 @@ nav a {
   gap: 20px;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 nav a {
   color: #58a6ff;
-  font-weight: 600;
 }
 
 nav button {
@@ -88,20 +61,26 @@ nav button:hover {
   color: #0d1117;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #f0f6fc;
+/* =========================
+   LAYOUT
+========================= */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
 }
 
-h2 {
-  margin-top: 40px;
-  color: #58a6ff;
+.card {
+  background: #161b22;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border-left: 4px solid #58a6ff;
 }
 
-a:hover {
-  opacity: 0.8;
-}
-
+/* =========================
+   PROFIL
+========================= */
 .profile {
   display: flex;
   align-items: center;
@@ -121,14 +100,9 @@ a:hover {
   font-size: 1.1rem;
 }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .profile {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
+/* =========================
+   CONTACT
+========================= */
 .contact {
   margin-top: 40px;
   display: flex;
@@ -137,7 +111,6 @@ a:hover {
 }
 
 .contact a {
-  color: #58a6ff;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -147,12 +120,9 @@ a:hover {
   font-size: 1.4rem;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .contact {
-    justify-content: center;
-  }
-}
+/* =========================
+   SUMMARY
+========================= */
 .summary {
   margin-top: 60px;
 }
@@ -162,6 +132,9 @@ a:hover {
   line-height: 1.7;
 }
 
+/* =========================
+   CERTIFICATS
+========================= */
 .cert-link {
   display: inline-block;
   margin-top: 10px;
@@ -177,8 +150,28 @@ a:hover {
   color: #0d1117;
 }
 
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  border-top: 1px solid #30363d;
+  color: #8b949e;
+}
 
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
 
-
-
+  .contact {
+    justify-content: center;
+  }
+}
 
