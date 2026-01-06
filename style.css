@@ -170,8 +170,25 @@ footer {
     text-align: center;
   }
 
+ .badges {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.badges img {
+  height: 55px;
+  background: #ffffff;
+  padding: 6px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+
   .contact {
     justify-content: center;
   }
 }
+
 
