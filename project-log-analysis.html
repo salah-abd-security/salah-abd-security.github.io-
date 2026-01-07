@@ -4,92 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Projet – Analyse de logs & détection d’incident (SIEM)</title>
-
-  <meta name="description" content="Projet cybersécurité : analyse de logs, détection d’incident et approche SIEM.">
-  <meta name="author" content="Salahadine Abdassama">
+  <title data-fr="Analyse de logs de sécurité"
+         data-en="Security Log Analysis">
+    Analyse de logs de sécurité
+  </title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
 <nav>
-  <a href="index.html">Accueil</a>
-  <a href="projects.html">Projets</a>
-  <a href="certifications.html">Certifications</a>
-  <a href="skills.html">Compétences</a>
+  <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+  <a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a>
+  <a href="skills.html" data-fr="Compétences" data-en="Skills">Compétences</a>
+  <button onclick="setLanguage('fr')">FR</button>
+  <button onclick="setLanguage('en')">EN</button>
 </nav>
 
 <div class="container">
 
-  <!-- PROJET -->
   <section class="card">
-    <h2>🔐 Analyse de logs & détection d’incident (Approche SIEM)</h2>
+    <h1 data-fr="📊 Analyse de logs de sécurité"
+        data-en="📊 Security Log Analysis"></h1>
 
-    <p>
-      <strong>Contexte :</strong>
-      Une infrastructure génère un volume important de logs système et réseau. Un comportement anormal est suspecté.
-    </p>
-
-    <p>
-      <strong>Objectif :</strong>
-      Identifier une activité suspecte à partir des journaux et déterminer s’il s’agit d’un incident de sécurité.
-    </p>
-
-    <p>
-      <strong>Analyse :</strong>
-      Analyse des logs système et réseau afin d’identifier des schémas inhabituels
-      (tentatives de connexion répétées, accès non autorisés, événements anormaux).
-    </p>
-
-    <p>
-      <strong>Actions :</strong>
-      Corrélation des événements, identification de l’incident, recommandations de mitigation
-      (renforcement des règles, surveillance continue, alertes SIEM).
-    </p>
-
-    <p>
-      <strong>Résultat :</strong>
-      Incident détecté et documenté, amélioration de la visibilité et de la posture de sécurité du système.
-    </p>
-
-    <p>
-      <strong>Outils :</strong>
-      Analyse de logs, SIEM (approche), Excel, outils système.
-    </p>
+    <p data-fr="Étude de logs systèmes et réseaux afin d’identifier des comportements suspects."
+       data-en="Analysis of system and network logs to identify suspicious behavior."></p>
   </section>
 
-  <!-- LIVRABLES -->
   <section class="card">
-    <h3>📂 Livrables</h3>
+    <h3 data-fr="📌 Contexte" data-en="📌 Context"></h3>
+    <p data-fr="Des alertes inhabituelles sont détectées dans les journaux systèmes."
+       data-en="Unusual alerts are detected in system logs."></p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="🎯 Objectif" data-en="🎯 Objective"></h3>
+    <p data-fr="Identifier les événements anormaux et déterminer leur origine."
+       data-en="Identify abnormal events and determine their source."></p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="🔍 Analyse technique" data-en="🔍 Technical Analysis"></h3>
+    <p data-fr="Corrélation d’événements, analyse temporelle et détection d’anomalies."
+       data-en="Event correlation, timeline analysis and anomaly detection."></p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="🛡️ Actions" data-en="🛡️ Actions"></h3>
     <ul>
-      <li>
-        <a href="assets/projects/project3/incident-report.docx" download>
-          📄 Rapport d’incident
-        </a>
-      </li>
-      <li>
-        <a href="assets/projects/project3/logs-analysis.xlsx" download>
-          📊 Analyse des logs
-        </a>
-      </li>
-      <li>
-        <a href="assets/projects/project3/scenario.docx" download>
-          📝 Scénario de l’incident
-        </a>
-      </li>
+      <li data-fr="Isolation du poste concerné"
+          data-en="Isolation of affected workstation"></li>
+      <li data-fr="Analyse approfondie des journaux"
+          data-en="Deep log analysis"></li>
     </ul>
   </section>
 
-  <p><a href="projects.html">⬅ Retour aux projets</a></p>
+  <section class="card">
+    <h3 data-fr="✅ Résultat" data-en="✅ Outcome"></h3>
+    <p data-fr="Incident maîtrisé et aucune compromission critique détectée."
+       data-en="Incident contained and no critical compromise detected."></p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="🧰 Outils" data-en="🧰 Tools"></h3>
+    <p>SIEM · Excel · Syslog</p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="📂 Livrables" data-en="📂 Deliverables"></h3>
+    <ul>
+      <li><a href="assets/projects/project2/log-analysis.xlsx" download>📊 Log Report</a></li>
+    </ul>
+  </section>
 
 </div>
 
-<footer>
-  © 2025 Salahadine Abdassama — Cybersecurity Analyst
-</footer>
+<footer>© 2025 Salahadine Abdassama</footer>
+
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll('[data-fr]').forEach(el => {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+}
+window.onload = () => setLanguage('fr');
+</script>
 
 </body>
 </html>
