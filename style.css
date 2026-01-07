@@ -213,3 +213,59 @@ footer {
   }
 }
 
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  color: #8b949e;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 1px solid #58a6ff;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #58a6ff;
+  color: #0d1117;
+}
+
+.btn-primary:hover {
+  background: #1f6feb;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #58a6ff;
+}
+
+.btn-secondary:hover {
+  background: #58a6ff;
+  color: #0d1117;
+}
+
