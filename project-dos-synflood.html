@@ -1,96 +1,75 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Analyse d’une attaque DoS – SYN Flood | Salah Abd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet – Analyse d’une attaque DoS (SYN Flood)</title>
+
+  <meta name="description" content="Étude de cas cybersécurité : analyse d’une attaque DoS de type SYN Flood.">
+  <meta name="author" content="Salahadine Abdassama">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- NAVIGATION -->
 <nav>
   <a href="index.html">Accueil</a>
   <a href="projects.html">Projets</a>
+  <a href="certifications.html">Certifications</a>
+  <a href="skills.html">Compétences</a>
 </nav>
 
 <div class="container">
 
-<h1>Analyse d’une attaque DoS (SYN Flood)</h1>
+  <!-- PROJET -->
+  <section class="card">
+    <h2>🔐 Analyse d’une attaque DoS (SYN Flood)</h2>
 
-<h2>Contexte</h2>
-<p>
-Dans ce scénario, je travaille en tant qu’analyste de sécurité pour une agence de voyage.
-Le site web de l’entreprise devient soudainement inaccessible et affiche une erreur de
-dépassement de délai de connexion.
-</p>
+    <p><strong>Contexte :</strong> Un serveur web devient indisponible suite à un trafic réseau anormal.</p>
 
-<h2>Observation initiale</h2>
-<ul>
-  <li>Indisponibilité du site web</li>
-  <li>Erreur de timeout côté navigateur</li>
-  <li>Alertes générées par le système de surveillance</li>
-</ul>
+    <p><strong>Objectif :</strong> Identifier la cause de l’interruption du service et déterminer le type d’attaque.</p>
 
-<h2>Analyse du trafic réseau</h2>
-<p>
-À l’aide d’un renifleur de paquets (Wireshark), une analyse du trafic réseau a révélé
-un volume anormalement élevé de paquets TCP SYN provenant d’une adresse IP inconnue.
-</p>
+    <p><strong>Analyse :</strong> Capture et analyse du trafic réseau révélant un volume élevé de requêtes TCP SYN provenant d’adresses IP suspectes.</p>
 
-<ul>
-  <li>Requêtes SYN répétées</li>
-  <li>Connexions TCP incomplètes</li>
-  <li>Saturation des ressources du serveur</li>
-</ul>
+    <p><strong>Actions :</strong> Mise hors ligne temporaire du serveur, blocage des adresses IP malveillantes via le pare-feu, analyse post-incident.</p>
 
-<h2>Identification de l’attaque</h2>
-<p>
-L’attaque identifiée est un <strong>déni de service (DoS) de type SYN Flood</strong>.
-Cette attaque exploite le mécanisme de connexion TCP afin de submerger le serveur
-avec des connexions semi-ouvertes.
-</p>
+    <p><strong>Résultat :</strong> Restauration du service et identification de l’attaque comme un SYN Flood (DoS).</p>
 
-<h2>Impact sur l’organisation</h2>
-<ul>
-  <li>Indisponibilité du site web</li>
-  <li>Interruption des activités commerciales</li>
-  <li>Perte de productivité des employés</li>
-  <li>Risque financier et réputationnel</li>
-</ul>
+    <p><strong>Outils :</strong> Wireshark, Pare-feu, Analyse TCP/IP.</p>
+  </section>
 
-<h2>Réponse à l’incident</h2>
-<ul>
-  <li>Mise hors ligne temporaire du serveur</li>
-  <li>Blocage de l’adresse IP malveillante via le pare-feu</li>
-  <li>Surveillance renforcée du trafic réseau</li>
-</ul>
+  <!-- LIVRABLES -->
+  <section class="card">
+    <h3>📂 Livrables</h3>
+    <ul>
+      <li>
+        <a href="assets/projects/project1/incident-report.docx" download>
+          📄 Rapport d’incident
+        </a>
+      </li>
+      <li>
+        <a href="assets/projects/project1/logs-analysis.xlsx" download>
+          📊 Analyse des logs
+        </a>
+      </li>
+      <li>
+        <a href="assets/projects/project1/scenario.docx" download>
+          📝 Scénario de l’attaque
+        </a>
+      </li>
+    </ul>
+  </section>
 
-<h2>Mesures de prévention</h2>
-<ul>
-  <li>Activation des SYN cookies</li>
-  <li>Limitation des connexions TCP simultanées</li>
-  <li>Déploiement d’un IDS/IPS</li>
-  <li>Utilisation d’un WAF</li>
-  <li>Protection anti-DDoS</li>
-</ul>
-<h2>Livrables du projet</h2>
-<ul>
-  <li><a class="cert-link" href="projects/dos-synflood/scenario.docx" target="_blank">📄 Scénario (DOCX)</a></li>
-  <li><a class="cert-link" href="projects/dos-synflood/incident-report.docx" target="_blank">📄 Rapport d’incident (DOCX)</a></li>
-  <li><a class="cert-link" href="projects/dos-synflood/traffic-analysis.xlsx" target="_blank">📊 Analyse du trafic (XLSX)</a></li>
-</ul>
-
-<h2>Conclusion</h2>
-<p>
-Ce projet démontre l’importance de la surveillance réseau et de la compréhension des
-attaques DoS. Une réponse rapide et des mécanismes de protection adaptés sont essentiels
-pour assurer la disponibilité des services web.
-</p>
+  <p><a href="projects.html">⬅ Retour aux projets</a></p>
 
 </div>
 
 <footer>
-© 2025 Salah Abd — Cybersecurity Analyst
+  © 2025 Salahadine Abdassama — Cybersecurity Analyst
 </footer>
 
 </body>
 </html>
+
