@@ -3,66 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projet – Analyse d’une attaque DoS (SYN Flood)</title>
 
-  <meta name="description" content="Étude de cas cybersécurité : analyse d’une attaque DoS de type SYN Flood.">
-  <meta name="author" content="Salahadine Abdassama">
+  <title data-fr="Analyse d’attaque DoS – SYN Flood"
+         data-en="DoS Attack Analysis – SYN Flood">
+    Analyse d’attaque DoS – SYN Flood
+  </title>
+
+  <meta name="description"
+        content="Case study: analysis of a SYN Flood denial-of-service attack using network traffic analysis.">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
 <nav>
-  <a href="index.html">Accueil</a>
-  <a href="projects.html">Projets</a>
-  <a href="certifications.html">Certifications</a>
-  <a href="skills.html">Compétences</a>
+  <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+  <a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a>
+  <a href="certifications.html" data-fr="Certifications" data-en="Certifications">Certifications</a>
+  <a href="skills.html" data-fr="Compétences" data-en="Skills">Compétences</a>
+  <button onclick="setLanguage('fr')">FR</button>
+  <button onclick="setLanguage('en')">EN</button>
 </nav>
 
 <div class="container">
 
-  <!-- PROJET -->
   <section class="card">
-    <h2>🔐 Analyse d’une attaque DoS (SYN Flood)</h2>
+    <h1 data-fr="🔐 Analyse d’une attaque DoS (SYN Flood)"
+        data-en="🔐 DoS Attack Analysis (SYN Flood)">
+    </h1>
 
-    <p><strong>Contexte :</strong> Un serveur web devient indisponible suite à un trafic réseau anormal.</p>
-
-    <p><strong>Objectif :</strong> Identifier la cause de l’interruption du service et déterminer le type d’attaque.</p>
-
-    <p><strong>Analyse :</strong> Capture et analyse du trafic réseau révélant un volume élevé de requêtes TCP SYN provenant d’adresses IP suspectes.</p>
-
-    <p><strong>Actions :</strong> Mise hors ligne temporaire du serveur, blocage des adresses IP malveillantes via le pare-feu, analyse post-incident.</p>
-
-    <p><strong>Résultat :</strong> Restauration du service et identification de l’attaque comme un SYN Flood (DoS).</p>
-
-    <p><strong>Outils :</strong> Wireshark, Pare-feu, Analyse TCP/IP.</p>
+    <p data-fr="Étude de cas d’une attaque par déni de service affectant la disponibilité d’un serveur web."
+       data-en="Case study of a denial-of-service attack affecting the availability of a web server.">
+    </p>
   </section>
 
-  <!-- LIVRABLES -->
   <section class="card">
-    <h3>📂 Livrables</h3>
+    <h3 data-fr="📌 Contexte"
+        data-en="📌 Context">
+    </h3>
+
+    <p data-fr="Un serveur web devient indisponible suite à un trafic réseau anormal."
+       data-en="A web server becomes unavailable due to abnormal network traffic.">
+    </p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="🎯 Objectif"
+        data-en="🎯 Objective">
+    </h3>
+
+    <p data-fr="Identifier la cause de l’interruption et qualifier le type d’attaque."
+       data-en="Identify the cause of the outage and determine the type of attack.">
+    </p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="🔍 Analyse"
+        data-en="🔍 Analysis">
+    </h3>
+
+    <p data-fr="Capture du trafic réseau montrant un volume élevé de requêtes TCP SYN provenant d’adresses IP suspectes."
+       data-en="Network traffic capture showing a high volume of TCP SYN requests from suspicious IP addresses.">
+    </p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="🛡️ Actions"
+        data-en="🛡️ Actions">
+    </h3>
+
     <ul>
-      <li>
-        <a href="assets/projects/project1/incident-report.docx" download>
-          📄 Rapport d’incident
-        </a>
+      <li data-fr="Mise hors ligne temporaire du serveur"
+          data-en="Temporary shutdown of the server">
       </li>
-      <li>
-        <a href="assets/projects/project1/logs-analysis.xlsx" download>
-          📊 Analyse des logs
-        </a>
+      <li data-fr="Blocage des adresses IP malveillantes via pare-feu"
+          data-en="Blocking malicious IP addresses via firewall">
       </li>
-      <li>
-        <a href="assets/projects/project1/scenario.docx" download>
-          📝 Scénario de l’attaque
-        </a>
+      <li data-fr="Analyse post-incident et durcissement"
+          data-en="Post-incident analysis and hardening">
       </li>
     </ul>
   </section>
 
-  <p><a href="projects.html">⬅ Retour aux projets</a></p>
+  <section class="card">
+    <h3 data-fr="✅ Résultat"
+        data-en="✅ Outcome">
+    </h3>
+
+    <p data-fr="Service restauré avec succès, attaque identifiée comme un SYN Flood."
+       data-en="Service successfully restored, attack identified as a SYN Flood.">
+    </p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="🧰 Outils utilisés"
+        data-en="🧰 Tools Used">
+    </h3>
+
+    <p>Wireshark · Firewall · TCP/IP Analysis</p>
+  </section>
+
+  <section class="card">
+    <h3 data-fr="📂 Livrables"
+        data-en="📂 Deliverables">
+    </h3>
+
+    <ul>
+      <li>
+        <a href="assets/projects/project1/incident-report.docx" download
+           data-fr="📄 Rapport d’incident"
+           data-en="📄 Incident Report">
+        </a>
+      </li>
+      <li>
+        <a href="assets/projects/project1/logs-analysis.xlsx" download
+           data-fr="📊 Analyse des logs"
+           data-en="📊 Log Analysis">
+        </a>
+      </li>
+      <li>
+        <a href="assets/projects/project1/scenario.docx" download
+           data-fr="📝 Scénario d’attaque"
+           data-en="📝 Attack Scenario">
+        </a>
+      </li>
+    </ul>
+  </section>
 
 </div>
 
@@ -70,6 +137,17 @@
   © 2025 Salahadine Abdassama — Cybersecurity Analyst
 </footer>
 
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll('[data-fr]').forEach(el => {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+}
+
+window.onload = function () {
+  setLanguage('fr');
+};
+</script>
+
 </body>
 </html>
-
