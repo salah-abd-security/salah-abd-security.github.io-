@@ -319,8 +319,35 @@ footer {
 .cert-logos img:hover {
   transform: scale(1.08);
 }
+/* =========================
+   HERO SKILLS BADGES
+========================= */
+.skills-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0 40px;
+}
+
+.skills-badges span {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: #c9d1d9;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skills-badges i {
+  color: #58a6ff;
+}
 
 .badge i {
   margin-right: 6px;
 }
+
 
