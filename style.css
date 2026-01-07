@@ -320,3 +320,7 @@ footer {
   transform: scale(1.08);
 }
 
+.badge i {
+  margin-right: 6px;
+}
+
