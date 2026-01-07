@@ -364,5 +364,42 @@ footer {
   border-radius: 6px;
 }
 
+/* =========================
+   CERTIFICATION LOGOS
+========================= */
+.cert-logos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 40px auto 20px;
+}
+
+.cert-logos img {
+  height: 55px;
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* =========================
+   SKILL BADGES
+========================= */
+.badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.badge {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
 
 
