@@ -16,15 +16,26 @@
 <body>
 
 <!-- NAVIGATION -->
-<nav>
-  <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
-  <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
-  <a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a>
-  <a href="certifications.html" data-fr="Certifications" data-en="Certifications">Certifications</a>
-  <a href="skills.html" data-fr="Compétences" data-en="Skills">Compétences</a>
-  <button onclick="setLanguage('fr')">FR</button>
-  <button onclick="setLanguage('en')">EN</button>
+ <nav class="navbar">
+  <div class="nav-brand">
+    <span>Salahadine</span>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="about.html" data-fr="À propos" data-en="About">À propos</a>
+    <a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a>
+    <a href="certifications.html" data-fr="Certifications" data-en="Certifications">Certifications</a>
+    <a href="skills.html" data-fr="Compétences" data-en="Skills">Compétences</a>
+
+    <div class="lang-buttons">
+      <button onclick="setLanguage('fr')">FR</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+  </div>
 </nav>
+
 
 <!-- HERO -->
 <section class="hero">
@@ -140,6 +151,7 @@ window.onload = () => setLanguage('fr');
 
 </body>
 </html>
+
 
 
 
