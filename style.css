@@ -348,3 +348,72 @@ footer {
   }
 }
 
+/* ===== HEADER & MENU MOBILE ===== */
+.header {
+  position: sticky;
+  top: 0;
+  background: #161b22;
+  z-index: 200;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Bouton hamburger */
+.menu-toggle {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #58a6ff;
+  cursor: pointer;
+}
+
+/* Menu */
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background: #0d1117;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #30363d;
+}
+
+.nav-menu a {
+  padding: 12px 0;
+  font-size: 1.1rem;
+}
+
+/* Lang buttons */
+.lang-switch {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Menu ouvert */
+.nav-menu.active {
+  display: flex;
+}
+
+/* ===== PC VIEW ===== */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 20px;
+    background: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+}
+
+
+
